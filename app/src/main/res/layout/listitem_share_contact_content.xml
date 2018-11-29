@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="48dp"
     android:background="@drawable/shape_share_contacts_item_background"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    >
 
-    <LinearLayout
+  <LinearLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_centerVertical="true"
+      android:layout_marginLeft="16dp"
+      android:orientation="vertical"
+      >
+
+    <TextView
+        android:id="@+id/list_item_contact_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="16dp"
-        android:orientation="vertical">
+        android:layout_marginBottom="4dp"
+        android:textColor="@color/listitem_title_text"
+        android:textSize="14sp"
+        tools:text="@tools:sample/full_names"
+        />
 
-        <TextView
-            android:id="@+id/list_item_contact_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
-            android:textColor="@color/listitem_title_text"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/list_item_contact_number"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/listitem_subtitle_text"
-            android:textSize="12sp" />
-    </LinearLayout>
+    <TextView
+        android:id="@+id/list_item_contact_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/listitem_subtitle_text"
+        android:textSize="12sp"
+        tools:text="@tools:sample/us_phones"
+        />
+  </LinearLayout>
 
 </RelativeLayout>

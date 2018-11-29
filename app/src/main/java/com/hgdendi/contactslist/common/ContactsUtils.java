@@ -15,8 +15,8 @@
  */
 package com.hgdendi.contactslist.common;
 
-import android.support.annotation.NonNull;
 import android.text.TextUtils;
+import androidx.annotation.NonNull;
 
 public class ContactsUtils {
     private static int BEGIN = 45217;
